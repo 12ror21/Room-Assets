@@ -1,0 +1,34 @@
+/* src/components/Button/Button.module.css */
+
+/* Эти стили принадлежат только компоненту Button: одинаковые имена в других компонентах
+   не пересекутся, потому что сборка превратит их в уникальные.
+*/
+
+.button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Варианты оформления: переключаются пропсом variant. */
+.primary {
+  background: var(--color-primary, #3b82f6);
+  color: #fff;
+}
+
+.secondary {
+  background: #eee;
+  color: #222;
+}
+
+/* Размеры: переключаются пропсом size. */
+.sm { font-size: 14px; }
+.md { font-size: 16px; }
+.lg { font-size: 18px; }
+
+/* Отключаем события кликов по "выключенной" кнопке */
+.disabled {
+  opacity: .6;
+  pointer-events: none;
+}
