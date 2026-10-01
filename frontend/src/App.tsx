@@ -27,8 +27,6 @@ function App() {
       <Header
         activeNavId={active}
         onNavigate={setActive}
-        user={{ name: "Мария Петрова" }}
-        onBellClick={() => console.log("bell")}
       />
       <main style={{
         padding: 16,
@@ -37,7 +35,7 @@ function App() {
         borderRadius: 8,
         margin: 16,
         boxShadow: '0 2px 8px rgba(0,0,0,0.1)',
-        minHeight: 'calc(100vh - 100px)' // Примерно под шапку
+        minHeight: 'calc(100vh - 100px)'
       }}>
         {renderContent()}
       </main>
